@@ -38,5 +38,4 @@ const productList = {
     renderHook.append(prodList);
   },
 };
-
 productList.render();
