@@ -3,25 +3,31 @@ class Product {
   imageUrl;
   description;
   price;
+
+  constructor(title, image, desc, price) {
+    this.title = title;
+    this.imageUrl = image;
+    this.description = desc;
+    this.price = price;
+  }
 }
 
 console.log(new Product());
 
 const productList = {
   products: [
-    // new Product(),
-    {
-      title: "A Pillow",
-      imageUrl: "https://fifabell.github.io/assets/images/oop.png",
-      price: 19.99,
-      description: "A soft pillow!",
-    },
-    {
-      title: "A Carpet",
-      imageUrl: "https://fifabell.github.io/assets/images/oop.png",
-      price: 89.99,
-      description: "A carpet which you might like - or not",
-    },
+    new Product(
+      "A Pillow",
+      "https://fifabell.github.io/assets/images/oop.png",
+      19.99,
+      "A soft pillow!"
+    ),
+    new Product(
+      "A Carpet",
+      "https://fifabell.github.io/assets/images/oop.png",
+      89.99,
+      "A carpet which you might like - or not"
+    ),
   ],
   render() {
     const renderHook = document.getElementById("app");
