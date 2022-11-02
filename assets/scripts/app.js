@@ -1,7 +1,15 @@
-// 상품 리스트 렌더링하고 버튼
+class Product {
+  title = "DEFAULT";
+  imageUrl;
+  description;
+  price;
+}
+
+console.log(new Product());
 
 const productList = {
   products: [
+    // new Product(),
     {
       title: "A Pillow",
       imageUrl: "https://fifabell.github.io/assets/images/oop.png",
