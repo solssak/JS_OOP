@@ -136,14 +136,14 @@ class ProductList extends Component {
   }
 }
 
-class Shop {
-  render() {
-    this.cart = new ShoppingCart("app");
-    this.cart.render();
-    const productList = new ProductList("app");
-    productList.render();
-  }
-}
+// class Shop {
+//   render() {
+//     this.cart = new ShoppingCart("app");
+//     this.cart.render();
+//     const productList = new ProductList("app");
+//     productList.render();
+//   }
+// }
 
 class App {
   static cart;
